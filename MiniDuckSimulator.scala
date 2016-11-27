@@ -14,6 +14,7 @@ object  MiniDuckSimulator extends App {
     val rubber: Duck = new RubberDuck
     rubber.display()
     rubber.performQuack()
+    rubber.performWaddle()
 
 
 

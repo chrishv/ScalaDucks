@@ -4,7 +4,7 @@ package Ducks
 /**
   * Created by Chris on 22/11/2016.
   */
- abstract class Duck (val flyBehaviour: FlyBehaviour = null, val quackBehaviour: QuackBehaviour = null  ) {
+ abstract class Duck (val flyBehaviour: FlyBehaviour = null, val quackBehaviour: QuackBehaviour = null, val oddBehaviour: OddBehaviour = null  ) {
   //private[Ducks]//
   //flyBehaviour: FlyBehaviour = null
   //private[Ducks]//
@@ -24,6 +24,10 @@ package Ducks
 
   def swim() {
     System.out.println("All ducks float, even decoys!")
+  }
+
+  def performWaddle() {
+      oddBehaviour.waddle()
   }
 
 }
